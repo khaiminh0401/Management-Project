@@ -1,4 +1,4 @@
-package com.dkm.qlda.taskservice;
+package com.dkm.qlda.task;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

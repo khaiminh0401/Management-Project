@@ -1,4 +1,4 @@
-package com.dkm.qlda.taskservice.service;
+package com.dkm.qlda.common.service;
 
 import java.util.List;
 
