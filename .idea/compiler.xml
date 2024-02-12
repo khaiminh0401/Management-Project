@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
         <module name="task-service" />
+        <module name="common-service" />
         <module name="discovery-service" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
+      <module name="common-service" options="-parameters" />
       <module name="discovery-service" options="-parameters" />
       <module name="task-service" options="-parameters" />
     </option>

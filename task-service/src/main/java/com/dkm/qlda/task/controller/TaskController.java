@@ -1,6 +1,6 @@
-package com.dkm.qlda.taskservice.controller;
+package com.dkm.qlda.task.controller;
 
-import com.dkm.qlda.taskservice.service.TaskService;
+import com.dkm.qlda.task.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
