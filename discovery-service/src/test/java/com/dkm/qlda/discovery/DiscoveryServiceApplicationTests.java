@@ -1,4 +1,4 @@
-package com.dkm.qlda.discoveryservice;
+package com.dkm.qlda.discovery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

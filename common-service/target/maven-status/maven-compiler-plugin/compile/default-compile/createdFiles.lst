@@ -1,0 +1,7 @@
+com\dkm\qlda\common\collection\Task.class
+com\dkm\qlda\common\collection\User.class
+com\dkm\qlda\common\service\BaseService.class
+com\dkm\qlda\common\collection\Project.class
+com\dkm\qlda\common\collection\UserJoinProject.class
+com\dkm\qlda\common\collection\TypeTask.class
+com\dkm\qlda\common\collection\Role.class

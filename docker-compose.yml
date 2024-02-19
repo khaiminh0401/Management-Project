@@ -1,0 +1,15 @@
+services:
+  task-service:
+    build:
+      context: ./task-service
+      dockerfile: Dockerfile
+    container_name: task-service
+    image: train/task-service
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - spring
+networks:
+  spring:
+    driver: bridge
