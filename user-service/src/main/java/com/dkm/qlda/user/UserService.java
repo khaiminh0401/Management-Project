@@ -1,15 +1,18 @@
 package com.dkm.qlda.user;
 
 import com.dkm.qlda.common.collection.User;
+import com.dkm.qlda.common.enums.Status;
+import com.dkm.qlda.common.exception.NotFoundException;
 import com.dkm.qlda.common.service.BaseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
-public class UserService implements BaseService<User,String> {
+public class UserService implements BaseService<User, String> {
     @Autowired
     private UserRepository userRepository;
 
@@ -36,5 +39,10 @@ public class UserService implements BaseService<User,String> {
     @Override
     public void delete(String id) {
 
+    }
+
+    public User login(User user) {
+        Optional<User> result = userRepository.findByUsernameAndPassword(user.getUsername(),user.getPassword());
+        return result.orElseThrow(() -> new NotFoundException("User not found"));
     }
 }
