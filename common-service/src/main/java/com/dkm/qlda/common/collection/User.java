@@ -14,12 +14,12 @@ import org.springframework.data.mongodb.core.mapping.MongoId;
 public class User {
     @MongoId
     private String _id;
-    private int id;
+//    private int id;
     private boolean is_manage;
-    private String full_name;
+//    private String full_name;
     private String username;
     private String password;
     private String birthday;
     private String address;
-    private int role_id;
+    private String role_id;
 }
