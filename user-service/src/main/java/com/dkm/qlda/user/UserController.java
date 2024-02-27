@@ -28,4 +28,13 @@ public class UserController {
                                 .success(true)
                                 .build());
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<?> findById(@PathVariable String id){
+        return ResponseEntity.ok(ResponseDto.builder()
+                .msg("Đăng nhập thành công")
+                .data(userService.findById(id))
+                .success(true)
+                .build());
+    }
 }
