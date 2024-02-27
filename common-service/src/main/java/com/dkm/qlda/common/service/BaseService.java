@@ -1,5 +1,7 @@
 package com.dkm.qlda.common.service;
 
+import com.dkm.qlda.common.exception.NotFoundException;
+
 import java.util.List;
 
 public interface BaseService<T, E> {

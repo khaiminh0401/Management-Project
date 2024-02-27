@@ -22,8 +22,8 @@ public class UserService implements BaseService<User, String> {
     }
 
     @Override
-    public User findById(String id) {
-        return null;
+    public User findById(String id){
+        return userRepository.findById(id).orElseThrow(() -> new NotFoundException("User not found"));
     }
 
     @Override
@@ -41,7 +41,7 @@ public class UserService implements BaseService<User, String> {
 
     }
 
-    public User login(User user) {
+    public User login(User user){
         Optional<User> result = userRepository.findByUsernameAndPassword(user.getUsername(),user.getPassword());
         return result.orElseThrow(() -> new NotFoundException("User not found"));
     }

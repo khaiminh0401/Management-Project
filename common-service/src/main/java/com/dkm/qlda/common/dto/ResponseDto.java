@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class ResponseDto {
-    private Object data;
-    private String msg;
     private boolean success;
+    private String msg;
+    private Object data;
 }

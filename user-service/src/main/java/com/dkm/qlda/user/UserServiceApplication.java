@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 @EnableMongoRepositories
-@EntityScan("com.dkm.qlda.common.document")
+@EntityScan("com.dkm.qlda.common.*")
 public class UserServiceApplication {
 
 	public static void main(String[] args) {
