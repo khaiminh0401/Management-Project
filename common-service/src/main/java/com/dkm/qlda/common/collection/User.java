@@ -4,17 +4,16 @@ package com.dkm.qlda.common.collection;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.MongoId;
 
 @Document(collection = "user")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    @MongoId
+    @Id
     private String _id;
-//    private int id;
     private boolean is_manage;
 //    private String full_name;
     private String username;
