@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("v1/user")
+@RequestMapping("user")
 public class UserController {
     @Autowired
     private UserService userService;
@@ -21,7 +21,7 @@ public class UserController {
                 .build());
     }
 
-    @PostMapping("/login")
+    @PostMapping("/auth")
     public ResponseEntity<?> login(@RequestBody User user){
         System.out.println(user.toString());
         return ResponseEntity.ok(ResponseDto.builder()
