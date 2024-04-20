@@ -1,0 +1,2 @@
+jwt.secret=asdgfajsgfdn
+jwt.expiration=1000000000
